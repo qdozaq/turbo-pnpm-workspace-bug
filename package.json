@@ -1,0 +1,33 @@
+{
+  "name": "turbo-pnpm-workspace-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "turbo": {
+    "baseBranch": "origin/main",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ]
+      }
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "turbo run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qdozaq/turbo-pnpm-workspace-bug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qdozaq/turbo-pnpm-workspace-bug/issues"
+  },
+  "homepage": "https://github.com/qdozaq/turbo-pnpm-workspace-bug#readme",
+  "devDependencies": {
+    "turbo": "^1.0.7"
+  }
+}
